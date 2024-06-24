@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Kevin Standaert</title>
+    <meta
+      name="description"
+      content="Bienvenue sur le portfolio de Kevin Standaert, développeur web fullstack passionné basé à Lille. Découvrez mes compétences en JavaScript, React, Node.js, et mes projets innovants. Téléchargez mon CV et contactez-moi pour toute collaboration ou opportunité professionnelle."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, kevin standaert, développeur web, fullstack, javascript, react, node.js, projet, cv, contact, next.js, tailwind css, linux, git, github, agile scrum, sqitch, api, sql, postgresql, mongodb, compétences, télécharger, collaboration, opportunité professionnelle, lille, france"
+    />
     <link rel="stylesheet" href="./output.css" />
     <script
       src="https://kit.fontawesome.com/6478e7c909.js"
@@ -22,7 +30,7 @@
     <header
       class="sticky top-0 z-50 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-gradient-to-r from-sundown-100 to-sundown-200 p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
     >
-      <a class="lg:row-span-2" href="#welcome"
+      <a class="lg:row-span-2" href="#welcome" aria-label="retour à l'accueil"
         ><i class="fa-solid fa-bug text-4xl"></i
       ></a>
 
@@ -31,36 +39,44 @@
       <ul
         class="col-span-4 row-start-3 flex gap-4 justify-self-end lg:col-start-3 lg:row-span-2 lg:gap-6"
       >
-        <a
-          href="#competence"
-          class="transition-all hover:scale-x-110 hover:text-sundown-900 active:text-sundown-400"
-        >
-          Compétences
-        </a>
-        <a
-          href="#projet"
-          class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
-        >
-          Projets
-        </a>
-        <a
-          href="#cv"
-          class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
-        >
-          Cv
-        </a>
-        <a
-          href="#contact"
-          class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
-        >
-          Contact
-        </a>
+        <li>
+          <a
+            href="#competence"
+            class="transition-all hover:scale-x-110 hover:text-sundown-900 active:text-sundown-400"
+          >
+            Compétences
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projet"
+            class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
+          >
+            Projets
+          </a>
+        </li>
+        <li>
+          <a
+            href="#cv"
+            class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
+          >
+            Cv
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
+          >
+            Contact
+          </a>
+        </li>
       </ul>
       <h2 class="col-span-3 col-start-2 flex text-sundown-900 lg:col-span-1">
         DEVELOPPEUR WEB FULLSTACK
       </h2>
     </header>
-    <div class="container mx-auto min-h-full rounded-xl p-6">
+    <div class="container mx-auto min-h-full rounded-xl p-2 sm:p-6">
       <div
         id="welcome"
         class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-gradient-to-br from-olive-200 to-olive-500 p-6 lg:justify-between"
@@ -79,8 +95,8 @@
           continuer à apprendre chaque jour.
         </p>
         <img
-          class="rounded-xl mb-8"
-          src="./assets/images/page_principale.jpg"
+          class="mb-8 rounded-xl"
+          src="./assets/images/page_principale.webp"
           alt="image d'un développeur devant son ordinateur"
         />
       </div>
@@ -100,7 +116,7 @@
           réactives. Ma maîtrise de l'environnement Linux et de GitHub pour la
           gestion des versions renforce mes capacités techniques.
         </p>
-        <div class="relative z-0 w-full max-w-64 overflow-hidden mb-8">
+        <div class="relative z-0 mb-8 w-full max-w-64 overflow-hidden">
           <div
             class="flex h-64 snap-y snap-mandatory flex-col gap-8 overflow-y-auto rounded-xl p-4"
           >
@@ -110,6 +126,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/html_original_wordmark_logo_icon_146478.png"
                 class="h-full w-full object-cover"
+                alt="logo html"
               />
             </div>
             <div
@@ -118,6 +135,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_wordmark_logo_icon_146576.png"
                 class="h-full w-full object-cover"
+                alt="logo css"
               />
             </div>
             <div
@@ -126,6 +144,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png"
                 class="h-full w-full object-cover"
+                alt="logo javascript"
               />
             </div>
             <div
@@ -134,6 +153,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png"
                 class="h-full w-full object-cover"
+                alt="logo tailwind css"
               />
               <p
                 class="absolute bottom-3 text-2xl font-extrabold text-[#44A8B3]"
@@ -147,6 +167,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
                 class="h-full w-full object-cover"
+                alt="logo react"
               />
             </div>
             <div
@@ -155,6 +176,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2148/PNG/512/nextjs_icon_132160.png"
                 class="h-full w-full object-cover"
+                alt="logo next.js"
               />
               <p
                 class="absolute -bottom-7 text-2xl font-extrabold text-[#000000]"
@@ -168,6 +190,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/512/PNG/512/prog-nodejs01_icon-icons.com_50781.png"
                 class="h-full w-full object-cover"
+                alt="logo node.js"
               />
             </div>
             <div
@@ -176,6 +199,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/express_original_wordmark_logo_icon_146528.png"
                 class="h-full w-full object-cover"
+                alt="logo express.js"
               />
             </div>
             <div
@@ -184,6 +208,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2104/PNG/512/api_icon_129131.png"
                 class="h-full w-full object-cover"
+                alt="logo api"
               />
             </div>
             <div
@@ -192,6 +217,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/628/PNG/512/sql-document_icon-icons.com_57634.png"
                 class="h-full w-full object-cover"
+                alt="logo sql"
               />
             </div>
             <div
@@ -200,6 +226,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"
                 class="h-full w-full object-cover"
+                alt="logo postgresql"
               />
             </div>
             <div
@@ -208,6 +235,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png"
                 class="h-full w-full object-cover"
+                alt="logo mongodb"
               />
             </div>
             <div
@@ -216,6 +244,7 @@
               <img
                 src="https://sqitch.org/img/sqitch-logo.png"
                 class="h-full w-full object-cover"
+                alt="logo sqitch"
               />
             </div>
             <div
@@ -224,6 +253,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/linux_original_logo_icon_146433.png"
                 class="h-full w-full object-cover"
+                alt="logo linux"
               />
               <p
                 class="absolute -bottom-7 ml-4 text-2xl font-extrabold text-[#000000]"
@@ -237,6 +267,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/git_original_wordmark_logo_icon_146510.png"
                 class="h-full w-full object-cover"
+                alt="logo git"
               />
             </div>
             <div
@@ -245,6 +276,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2415/PNG/512/github_original_wordmark_logo_icon_146506.png"
                 class="h-full w-full object-cover"
+                alt="logo github"
               />
             </div>
             <div
@@ -253,6 +285,7 @@
               <img
                 src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_scrum_icon_158716.png"
                 class="h-full w-full object-cover"
+                alt="logo agile scrum"
               />
               <p
                 class="absolute -bottom-4 text-2xl font-extrabold text-[#000000]"
@@ -286,7 +319,7 @@
         </p>
         <img
           class="rounded-xl"
-          src="./assets/images/page_principale.jpg"
+          src="./assets/images/page_principale.webp"
           alt="image d'un développeur devant son ordinateur"
         />
       </div>
@@ -294,7 +327,9 @@
         id="cv"
         class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-gradient-to-bl from-olive-500 to-olive-200 p-6 lg:justify-between"
       >
-        <h3 class="mt-10 text-xl font-extrabold sm:mt-24 lg:text-6xl">
+        <h3
+          class="mt-10 text-xl font-extrabold sm:mt-24 sm:text-3xl lg:text-6xl"
+        >
           TELECHARGER MON CV
         </h3>
         <p class="text-center sm:text-2xl">
@@ -309,14 +344,14 @@
         </p>
         <img
           class="rounded-xl"
-          src="./assets/images/image_cv.png"
+          src="./assets/images/image_cv.webp"
           alt="image d'un développeur devant son ordinateur"
         />
         <a
-          class="mb-8 text-xl lg:text-3xl font-extrabold transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
+          class="mb-8 text-center text-xl font-extrabold transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400 lg:text-3xl"
           href="https://drive.google.com/file/d/1EzJ7ckqJNEGUXjpVNgcF4iKYR2BuQNsN/view?usp=drive_link"
           download="cv_kevin-standaert.pdf"
-          >Lien vers mon Cv</a
+          >Lien de téléchargement de mon Cv</a
         >
       </div>
       <div
@@ -342,7 +377,7 @@
         </p>
         <img
           class="rounded-xl"
-          src="./assets/images/page_principale.jpg"
+          src="./assets/images/page_principale.webp"
           alt="image d'un développeur devant son ordinateur"
         />
       </div>
