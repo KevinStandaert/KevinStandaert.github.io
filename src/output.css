@@ -721,6 +721,14 @@ html {
   height: 100%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -735,6 +743,14 @@ html {
 
 .max-w-64 {
   max-width: 16rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
 }
 
 .flex-none {
