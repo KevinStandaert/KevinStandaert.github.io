@@ -20,7 +20,7 @@
     class="mx-4 mb-12 min-h-screen bg-gradient-to-r from-sundown-100 to-sundown-200 text-olive-900"
   >
     <header
-      class="sticky top-0 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-gradient-to-r from-sundown-100 to-sundown-200 p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
+      class="sticky top-0 z-50 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-gradient-to-r from-sundown-100 to-sundown-200 p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
     >
       <a class="lg:row-span-2" href="#welcome"
         ><i class="fa-solid fa-bug text-4xl"></i
@@ -47,7 +47,7 @@
           href="#cv"
           class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
         >
-          CV
+          Cv
         </a>
         <a
           href="#contact"
@@ -66,11 +66,11 @@
         class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-gradient-to-br from-olive-200 to-olive-500 p-6 lg:justify-between"
       >
         <h3
-          class="mt-10 snap-start text-3xl font-extrabold sm:mt-24 lg:text-6xl"
+          class="mt-10 snap-start text-2xl font-extrabold sm:mt-24 lg:text-6xl"
         >
           WELCOME ON BOARD!
         </h3>
-        <p class="text-center text-2xl">
+        <p class="text-center sm:text-2xl">
           Bonjour et bienvenue sur mon
           <span class="font-extrabold text-sundown-900">portfolio</span>! Je
           m'appelle Kévin et je suis un développeur web passionné basé à Lille.
@@ -91,7 +91,7 @@
         <h3 class="mt-10 text-3xl font-extrabold sm:mt-24 lg:text-6xl">
           COMPETENCES
         </h3>
-        <p class="text-center text-2xl">
+        <p class="text-center sm:text-2xl">
           Je suis développeur web fullstack avec une forte compétence en
           <span class="font-extrabold text-sundown-900">JavaScript</span>
           (vanilla, Node.js, Next.js), ainsi qu'en intégration de services REST
@@ -100,11 +100,34 @@
           réactives. Ma maîtrise de l'environnement Linux et de GitHub pour la
           gestion des versions renforce mes capacités techniques.
         </p>
-        <img
-          class="rounded-xl"
-          src="./assets/images/page_principale.jpg"
-          alt="image d'un développeur devant son ordinateur"
-        />
+        <div class="relative z-0 w-full max-w-64 overflow-hidden">
+          <div class=" touch-pan-y flex flex-col h-64 snap-y snap-mandatory overflow-y-auto rounded-xl gap-8">
+            <div
+              class="flex w-full flex-none -scroll-pt-40 snap-center items-center justify-center"
+            >
+              <img
+                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/html_original_wordmark_logo_icon_146478.png"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div
+              class="flex w-full flex-none snap-center items-center justify-center"
+            >
+              <img
+                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_wordmark_logo_icon_146576.png"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div
+              class="flex w-full flex-none snap-center items-center justify-center"
+            >
+              <img
+                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png"
+                class="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div
         id="projet"
@@ -113,10 +136,15 @@
         <h3 class="mt-10 text-3xl font-extrabold sm:mt-24 lg:text-6xl">
           PROJETS
         </h3>
-        <p class="text-center text-2xl">
-          Je suis constamment à la recherche de nouvelles opportunités pour <span class="font-extrabold text-sundown-900">améliorer mes compétences</span>
-           et <span class="font-extrabold text-sundown-900">contribuer à des projets innovants</span>.
-          J'apprécie particulièrement les environnements de travail
+        <p class="text-center sm:text-2xl">
+          Je suis constamment à la recherche de nouvelles opportunités pour
+          <span class="font-extrabold text-sundown-900"
+            >améliorer mes compétences</span
+          >
+          et
+          <span class="font-extrabold text-sundown-900"
+            >contribuer à des projets innovants</span
+          >. J'apprécie particulièrement les environnements de travail
           collaboratifs où le contact humain est valorisé. Mon objectif est de
           devenir un lead developer dans les cinq prochaines années, afin de
           pouvoir encadrer des équipes et piloter des projets de grande
@@ -135,13 +163,15 @@
         <h3 class="mt-10 text-3xl font-extrabold sm:mt-24 lg:text-6xl">
           TELECHARGER MON CV
         </h3>
-        <p class="text-center text-2xl">
+        <p class="text-center sm:text-2xl">
           Issu d’une filière hôtelière, j’ai acquis de nombreuses compétences en
           gestion, créativité, et résolution de problèmes en travaillant comme
           bar manager pendant 4 ans. En 2023, j’ai décidé de me reconvertir dans
           le développement web et j'ai obtenu un bac +2 dans ce domaine. Depuis,
-          je travaille sur des projets personnels et continue à me <span class="font-extrabold text-sundown-900">former de
-            manière autonome</span>.
+          je travaille sur des projets personnels et continue à me
+          <span class="font-extrabold text-sundown-900"
+            >former de manière autonome</span
+          >.
         </p>
         <img
           class="rounded-xl"
@@ -156,13 +186,19 @@
         <h3 class="mt-10 text-3xl font-extrabold sm:mt-24 lg:text-6xl">
           CONTACT
         </h3>
-        <p class="text-center text-2xl">
-          Grâce à <span class="font-extrabold text-sundown-900">mon expérience diversifiée</span>, je sais travailler en toute
-          autonomie et en équipe, avec une excellente gestion du stress et une
-          grande attention aux détails. Je suis <span class="font-extrabold text-sundown-900">motivé</span>, adaptable et toujours
-          prêt à <span class="font-extrabold text-sundown-900">relever de nouveaux défis</span>. N'hésitez pas à explorer mes projets
-          ci-dessus et à me contacter pour toute opportunité de collaboration ou
-          pour en savoir plus sur mon parcours.
+        <p class="text-center sm:text-2xl">
+          Grâce à
+          <span class="font-extrabold text-sundown-900"
+            >mon expérience diversifiée</span
+          >, je sais travailler en toute autonomie et en équipe, avec une
+          excellente gestion du stress et une grande attention aux détails. Je
+          suis <span class="font-extrabold text-sundown-900">motivé</span>,
+          adaptable et toujours prêt à
+          <span class="font-extrabold text-sundown-900"
+            >relever de nouveaux défis</span
+          >. N'hésitez pas à explorer mes projets ci-dessus et à me contacter
+          pour toute opportunité de collaboration ou pour en savoir plus sur mon
+          parcours.
         </p>
         <img
           class="rounded-xl"
