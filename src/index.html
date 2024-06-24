@@ -17,15 +17,20 @@
     />
   </head>
   <body
-    class="min-h-screen bg-gradient-to-tl from-sundown-300 to-olive-400 text-olive-900"
+    class="mx-4 mb-12 min-h-screen bg-gradient-to-r from-sundown-100 to-sundown-200 text-olive-900"
   >
     <header
-      class="sticky top-0 mx-6 mb-12 grid grid-cols-[70px_600px_1fr] grid-rows-2 items-center p-6 text-2xl font-extrabold"
+      class="sticky top-0 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-gradient-to-r from-sundown-100 to-sundown-200 p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
     >
-      <i class="fa-solid fa-bug row-span-2 text-4xl"></i>
-      <h1 class="flex flex-row">KEVIN STANDAERT</h1>
+      <a class="lg:row-span-2" href="#welcome"
+        ><i class="fa-solid fa-bug text-4xl"></i
+      ></a>
 
-      <ul class="col-start-3 row-span-2 flex gap-2 justify-self-end sm:gap-6">
+      <h1 class="col-span-3 flex flex-row lg:col-span-1">KEVIN STANDAERT</h1>
+
+      <ul
+        class="col-span-4 row-start-3 flex gap-4 justify-self-end lg:col-start-3 lg:row-span-2 lg:gap-6"
+      >
         <a
           href="#"
           class="transition-all hover:scale-x-110 hover:text-sundown-900 active:text-sundown-400"
@@ -51,12 +56,54 @@
           CV
         </a>
       </ul>
-      <h2 class="col-start-2 flex text-sundown-900">
+      <h2 class="col-span-3 col-start-2 flex text-sundown-900 lg:col-span-1">
         DEVELOPPEUR WEB FULLSTACK
       </h2>
     </header>
-    <div class="container mx-auto min-h-screen rounded-xl p-12">
-      <h3>Hello world</h3>
+    <div class="container mx-auto min-h-full rounded-xl p-6">
+      <div
+        id="welcome"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-gradient-to-br from-olive-200 to-olive-500 p-6 lg:justify-between"
+      >
+        <h3
+          class="mt-10 snap-start text-3xl font-extrabold sm:mt-24 lg:text-6xl"
+        >
+          WELCOME ON BOARD!
+        </h3>
+        <p class="text-center text-2xl">
+          Bonjour et bienvenue sur mon
+          <span class="font-extrabold text-sundown-900">portfolio</span>! Je
+          m'appelle Kévin et je suis un développeur web passionné basé à Lille.
+          Avec un parcours professionnel riche et varié, j'ai décidé de me
+          tourner vers le développement web pour relever de nouveaux défis et
+          continuer à apprendre chaque jour.
+        </p>
+        <img
+          class="rounded-xl"
+          src="./assets/images/page_principale.jpg"
+          alt="image d'un développeur devant son ordinateur"
+        />
+      </div>
+      <div
+        class="b-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-gradient-to-br from-olive-200 to-olive-500 p-6 lg:justify-between"
+      >
+        <h3 class="mt-10 text-3xl font-extrabold sm:mt-24 lg:text-6xl">
+          WELCOME ON BOARD!
+        </h3>
+        <p class="text-center text-2xl">
+          Bonjour et bienvenue sur mon
+          <span class="font-extrabold text-sundown-900">portfolio</span>! Je
+          m'appelle Kévin et je suis un développeur web passionné basé à Lille.
+          Avec un parcours professionnel riche et varié, j'ai décidé de me
+          tourner vers le développement web pour relever de nouveaux défis et
+          continuer à apprendre chaque jour.
+        </p>
+        <img
+          class="rounded-xl"
+          src="./assets/images/page_principale.jpg"
+          alt="image d'un développeur devant son ordinateur"
+        />
+      </div>
     </div>
   </body>
 </html>
