@@ -713,20 +713,12 @@ html {
   display: grid;
 }
 
-.h-64 {
-  height: 16rem;
+.h-72 {
+  height: 18rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-72 {
-  height: 18rem;
 }
 
 .min-h-full {
@@ -739,14 +731,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-64 {
-  max-width: 16rem;
-}
-
-.max-w-96 {
-  max-width: 24rem;
 }
 
 .max-w-72 {
@@ -777,8 +761,16 @@ html {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -809,6 +801,10 @@ html {
   gap: 2rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .justify-self-end {
   justify-self: end;
 }
@@ -825,27 +821,14 @@ html {
   border-radius: 0.75rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-sundown-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 177 177 / var(--tw-bg-opacity));
-}
-
 .bg-sundown-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 200 200 / var(--tw-bg-opacity));
+}
+
+.bg-sundown-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 225 225 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-bl {
@@ -878,6 +861,12 @@ html {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-sundown-50 {
+  --tw-gradient-from: #fef2f2 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 242 242 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-olive-200 {
   --tw-gradient-to: #cedbbb var(--tw-gradient-to-position);
 }
@@ -907,14 +896,16 @@ html {
   padding: 1.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.p-8 {
+  padding: 2rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.p-16 {
+  padding: 4rem;
+}
+
+.p-32 {
+  padding: 8rem;
 }
 
 .text-center {
@@ -963,11 +954,6 @@ html {
 .text-sundown-900 {
   --tw-text-opacity: 1;
   color: rgb(130 26 26 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-xl {
