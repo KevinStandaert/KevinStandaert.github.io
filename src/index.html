@@ -49,7 +49,7 @@
         </li>
         <li>
           <a
-            href="#projet"
+            href="#project"
             class="transition-all hover:scale-110 hover:text-sundown-900 active:text-sundown-400"
           >
             Projets
@@ -315,7 +315,7 @@
         </div>
       </div>
       <div
-        id="projet"
+        id="project"
         class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-gradient-to-br from-olive-200 to-olive-500 p-6 lg:justify-between"
       >
         <h3 class="mt-10 text-2xl font-extrabold sm:mt-24 lg:text-6xl">
@@ -335,41 +335,48 @@
           pouvoir encadrer des équipes et piloter des projets de grande
           envergure.
         </p>
-        <div class="grid grid-cols-1 grid-rows-1 gap-x-16 px-4 sm:grid-cols-2">
+        <div
+          class="mb-8 grid grid-cols-1 grid-rows-1 gap-16 px-4 sm:grid-cols-2"
+        >
           <div
-            class="relative lg:opacity-20 transition-all hover:scale-110 hover:opacity-100"
+            class="transition-all hover:scale-110 hover:opacity-100 lg:opacity-20"
           >
-            <a href="https://pureniceness-front-6a800c130dfe.herokuapp.com/"
-              ><img
-                class="mb-12 h-1/2 w-full rounded-xl object-cover shadow-xl"
-                src="./assets/images/pureniceness.webp"
-                alt="Site pureniceness record"
-            /></a>
-            <h4
-              class="absolute right-0 top-1/3  rounded-bl-lg rounded-tl-lg px-8 py-4 text-center text-xl font-extrabold text-white backdrop-brightness-50"
+            <div
+              class="flex h-96 flex-col justify-end rounded-t-xl bg-[url(./assets/images/pureniceness.webp)] bg-cover bg-center shadow-xl"
             >
-              Pureniceness Record
-            </h4>
-            <p class="text-center text-xl font-extrabold">
+              <div class="p-4 backdrop-brightness-50">
+                <a href="https://pureniceness-front-6a800c130dfe.herokuapp.com/"
+                  ><h4
+                    class="text-end font-extrabold text-white transition-all hover:text-sundown-900 active:text-sundown-400 sm:text-xl"
+                  >
+                    Pureniceness Record
+                  </h4></a
+                >
+              </div>
+            </div>
+            <p class="mt-8 text-center font-extrabold sm:text-xl">
               Création d'une plateforme musicale pour le label Pureniceness
               Record utilisant React, Node.js et PostgreSQL.
             </p>
           </div>
           <div
-            class="relative lg:opacity-20 transition-all hover:scale-110 hover:opacity-100"
+            class="transition-all hover:scale-110 hover:opacity-100 lg:opacity-20"
           >
-            <a href="#"
-              ><img
-                class="mb-12 h-1/2 w-full rounded-xl object-cover shadow-xl"
-                src="./assets/images/logo_cocktails_factory.webp"
-                alt="Site pureniceness record"
-            /></a>
-            <h4
-              class="absolute right-0 top-1/3 rounded-bl-lg rounded-tl-lg px-8 py-4 text-center text-xl font-extrabold text-white backdrop-brightness-50"
+            <div
+              class="col-start-2 flex h-96 flex-col justify-end rounded-t-xl bg-[url(./assets/images/logo_cocktails_factory.webp)] bg-cover bg-center shadow-xl"
             >
-              Cocktails Factory
-            </h4>
-            <p class="text-center text-xl font-extrabold">
+              <div class="p-4 backdrop-brightness-50">
+                <a href="#project"
+                  ><h4
+                    class="text-end font-extrabold text-white transition-all hover:text-sundown-900 active:text-sundown-400 sm:text-xl"
+                  >
+                    Cocktails Factory
+                  </h4></a
+                >
+              </div>
+            </div>
+
+            <p class="mt-8 text-center font-extrabold sm:text-xl">
               Projet personnel consistant à créer une application regroupant
               toutes mes recettes élaborées en 15 ans, en utilisant Next.js,
               Tailwind CSS et PostgreSQL. En cours de réalisation...
@@ -431,30 +438,27 @@
           parcours.
         </p>
         <div
-          class="mb-8 grid grid-cols-1 grid-rows-1 items-center justify-center gap-8 lg:grid-cols-2 lg:grid-rows-2 lg:gap-16 sm:text-xl lg:text-3xl"
+          class="mb-8 grid grid-cols-1 grid-rows-1 items-center justify-center gap-8 sm:text-xl lg:grid-cols-2 lg:grid-rows-2 lg:gap-16 lg:text-3xl"
         >
           <a
             href="https://www.linkedin.com/in/kevin-standaert/"
-            class="sm:h-72 h-32 items-center justify-center text-center rounded-xl bg-sundown-100 px-8 py-16 font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:p-32"
+            class="h-32 items-center justify-center rounded-xl bg-sundown-100 px-8 py-16 text-center font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:h-72 sm:p-32"
             >LinkedIn</a
           >
           <a
             href="mailto:ks.standaert@gmail.com"
-            class="sm:h-72 h-32 flex flex-col rounded-xl text-center bg-sundown-100 px-8 py-16 font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:p-32"
+            class="flex h-32 flex-col rounded-xl bg-sundown-100 px-8 py-16 text-center font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:h-72 sm:p-32"
             >Mail
             <span class="lg:text-sundown-100">ks.standaert@gmail.com</span></a
           >
           <a
             href="tel:0630768924"
-            class="sm:h-72 h-32 flex select-text flex-col text-center rounded-xl bg-sundown-100 px-8 py-16 font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:p-32"
-            >Téléphone<span
-              class=" lg:text-sundown-100"
-              >06.30.76.89.24</span
-            ></a
+            class="flex h-32 select-text flex-col rounded-xl bg-sundown-100 px-8 py-16 text-center font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:h-72 sm:p-32"
+            >Téléphone<span class="lg:text-sundown-100">06.30.76.89.24</span></a
           >
           <a
             href="https://github.com/KevinStandaert"
-            class="sm:h-72 h-32 rounded-xl text-center bg-sundown-100 px-8 py-16 font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:p-32"
+            class="h-32 rounded-xl bg-sundown-100 px-8 py-16 text-center font-extrabold shadow-xl transition-all hover:scale-110 hover:bg-sundown-900 hover:text-white active:bg-sundown-400 sm:h-72 sm:p-32"
             >GitHub</a
           >
         </div>
