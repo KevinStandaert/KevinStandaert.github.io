@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://kevinstandaert.github.io/sitemap.xml
