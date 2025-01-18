@@ -34,7 +34,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Roboto Mono", ...defaultTheme.fontFamily.sans],
+        sans: ["Nunito Sans", ...defaultTheme.fontFamily.sans],
       },
     },
   },
