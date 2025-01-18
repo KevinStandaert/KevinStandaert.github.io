@@ -959,6 +959,27 @@ html {
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.max-w-10 {
+  max-width: 2.5rem;
+}
+
+.max-w-32 {
+  max-width: 8rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
