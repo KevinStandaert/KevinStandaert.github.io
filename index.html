@@ -1,3 +1,5 @@
+<!-- Version 2.0 -->
+
 <!doctype html>
 <html lang="fr" class="scroll-smooth">
   <head>
@@ -92,16 +94,10 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body
-    class="mx-4 mb-12 min-h-screen bg-gradient-to-r from-white via-orange-200 to-orange-300 text-olive-950"
-  >
+  <body class="mx-4 mb-12 min-h-screen bg-black text-white">
     <header
-      class="sticky top-0 z-50 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-gradient-to-r from-white via-orange-200 to-orange-300 p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
+      class="sticky top-0 z-50 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-black p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
     >
       <a class="lg:row-span-2" href="#welcome" aria-label="retour à l'accueil"
         ><i class="fa-solid fa-bug text-4xl"></i
@@ -109,8 +105,10 @@
 
       <h1 class="col-span-3 flex flex-row lg:col-span-1">KEVIN STANDAERT</h1>
 
+      <i class="fa-solid fa-bars"></i>
+
       <ul
-        class="col-span-4 row-start-3 flex gap-4 justify-self-end lg:col-start-3 lg:row-span-2 lg:gap-6"
+        class="col-span-4 row-start-3 hidden gap-4 justify-self-end lg:col-start-3 lg:row-span-2 lg:flex lg:gap-6"
       >
         <li>
           <a
@@ -152,7 +150,7 @@
     <div class="container mx-auto min-h-full rounded-xl p-2 sm:p-6">
       <div
         id="welcome"
-        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-olive-300 bg-opacity-80 p-6 lg:justify-between"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-10 bg-gradient-to-t from-[#0A0B1F] via-[#020624] to-black p-6 shadow-md shadow-gray-600 lg:justify-between"
       >
         <h3
           class="mt-10 snap-start text-2xl font-extrabold sm:mt-24 lg:text-6xl"
@@ -175,16 +173,19 @@
           Je vous invite à parcourir mon portfolio pour découvrir mes
           réalisations et mieux comprendre mon approche et mes compétences.
         </p>
-        <img
+        <div
+          class="min-h-screen w-full bg-[url('src/assets/images/page_principale.webp')] bg-cover bg-center"
+        ></div>
+        <!-- <img
           loading="lazy"
           class="mb-8 rounded-xl"
           src="src/assets/images/page_principale.webp"
           alt="image d'un développeur devant son ordinateur"
-        />
+        /> -->
       </div>
       <div
         id="competence"
-        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-olive-300 bg-opacity-80 p-6 lg:justify-between"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-20 bg-gradient-to-t from-white via-slate-950 to-black p-6 shadow-md shadow-gray-600 lg:justify-between"
       >
         <h3 class="mt-10 text-2xl font-extrabold sm:mt-24 lg:text-6xl">
           COMPETENCES
@@ -215,7 +216,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/html_original_wordmark_logo_icon_146478.png"
-              class="h-full w-full"
+              class="h-full w-full mix-blend-luminosity"
               alt="logo html"
             />
           </div>
@@ -223,7 +224,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_wordmark_logo_icon_146576.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo css"
             />
           </div>
@@ -231,7 +232,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo javascript"
             />
           </div>
@@ -239,7 +240,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo tailwind css"
             />
           </div>
@@ -247,7 +248,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo react"
             />
           </div>
@@ -255,7 +256,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2148/PNG/512/nextjs_icon_132160.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo next.js"
             />
           </div>
@@ -263,7 +264,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/512/PNG/512/prog-nodejs01_icon-icons.com_50781.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo node.js"
             />
           </div>
@@ -271,7 +272,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/express_original_wordmark_logo_icon_146528.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo express.js"
             />
           </div>
@@ -279,7 +280,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2104/PNG/512/api_icon_129131.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo api"
             />
           </div>
@@ -287,7 +288,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/628/PNG/512/sql-document_icon-icons.com_57634.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo sql"
             />
           </div>
@@ -295,7 +296,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo postgresql"
             />
           </div>
@@ -303,7 +304,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo mongodb"
             />
           </div>
@@ -311,7 +312,7 @@
             <img
               loading="lazy"
               src="https://sqitch.org/img/sqitch-mark.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo sqitch"
             />
           </div>
@@ -319,7 +320,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo flutter"
             />
           </div>
@@ -327,7 +328,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/github_original_wordmark_logo_icon_146506.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo github"
             />
           </div>
@@ -335,7 +336,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/linux_original_logo_icon_146433.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo linux"
             />
           </div>
@@ -343,7 +344,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_scrum_icon_158716.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo agile scrum"
             />
           </div>
@@ -351,7 +352,7 @@
             <img
               loading="lazy"
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/git_original_wordmark_logo_icon_146510.png"
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover mix-blend-luminosity"
               alt="logo git"
             />
           </div>
@@ -360,7 +361,7 @@
       <!-- Projets -->
       <div
         id="project"
-        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-olive-300 bg-opacity-80 p-6 lg:justify-between"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-20 bg-gradient-to-t from-white to-black p-6 lg:justify-between"
       >
         <h3 class="mt-10 text-2xl font-extrabold sm:mt-24 lg:text-6xl">
           PROJETS
@@ -392,7 +393,7 @@
           >
             <a target="_blank" href="https://pureniceness.netlify.app/">
               <div
-                class="flex h-96 flex-col justify-end rounded-t-xl bg-[url(src/assets/images/pureniceness.webp)] bg-cover bg-center shadow-lg shadow-black transition-all duration-700 hover:rotate-2"
+                class="flex h-80 flex-col justify-end rounded-t-xl bg-[url(src/assets/images/pureniceness.webp)] bg-cover bg-center shadow-lg shadow-black transition-all duration-700 hover:rotate-2"
               >
                 <div class="p-4 backdrop-brightness-50">
                   <h4
@@ -414,7 +415,7 @@
           >
             <a target="_blank" href="https://cocktails-factory.vercel.app/">
               <div
-                class="col-start-2 flex h-96 flex-col justify-end rounded-t-xl bg-[url(src/assets/images/logo_cocktails_factory.webp)] bg-cover bg-center shadow-lg shadow-black transition-all duration-700 hover:rotate-2"
+                class="col-start-2 flex h-80 flex-col justify-end rounded-t-xl bg-[url(src/assets/images/logo_cocktails_factory.webp)] bg-cover bg-center shadow-lg shadow-black transition-all duration-700 hover:rotate-2"
               >
                 <div class="p-4 backdrop-brightness-50">
                   <h4
@@ -437,7 +438,7 @@
           >
             <a href="#welcome">
               <div
-                class="flex h-96 flex-col justify-end rounded-t-xl bg-[url(src/assets/images/portfolio.webp)] bg-cover bg-center shadow-lg shadow-black transition-all duration-700 hover:rotate-2"
+                class="flex h-80 flex-col justify-end rounded-t-xl bg-[url(src/assets/images/portfolio.webp)] bg-cover bg-center shadow-lg shadow-black transition-all duration-700 hover:rotate-2"
               >
                 <div class="p-4 backdrop-brightness-50">
                   <h4
@@ -448,7 +449,9 @@
                 </div>
               </div>
             </a>
-            <p class="mt-8 text-center font-extrabold sm:text-xl">
+            <p
+              class="mt-8 text-center font-extrabold text-black sm:text-xl lg:text-white"
+            >
               Site personnel regroupant mes compétences, mes projets et mes
               réalisations.
             </p>
@@ -461,7 +464,7 @@
       </div>
       <div
         id="cv"
-        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-olive-300 bg-opacity-80 p-6 lg:justify-between"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-20 bg-gradient-to-t from-white via-slate-950 to-black p-6 lg:justify-between"
       >
         <h3
           class="mt-10 text-2xl font-extrabold sm:mt-24 sm:text-3xl lg:text-6xl"
@@ -496,7 +499,7 @@
         </p>
         <img
           loading="lazy"
-          class="rounded-xl"
+          class="w-full max-w-[600px] rounded-xl"
           src="src/assets/images/image_cv.webp"
           alt="image d'un développeur devant son ordinateur"
         />
@@ -510,7 +513,7 @@
       </div>
       <div
         id="contact"
-        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl bg-olive-300 bg-opacity-80 p-6 lg:justify-between"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-20 bg-gradient-to-t from-white via-slate-950 to-black p-6 lg:justify-between"
       >
         <h3 class="mt-10 text-2xl font-extrabold sm:mt-24 lg:text-6xl">
           CONTACT
@@ -611,8 +614,11 @@
     </div>
     <footer>
       <p class="px-4 text-center text-xs font-extrabold sm:text-xl">
-        © 2024 Kevin Standaert - Tous droits réservés
+        © <span id="year"></span> Kevin Standaert - Tous droits réservés
       </p>
     </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
