@@ -1,4 +1,4 @@
-<!-- Version 2.0 -->
+<!-- Version 2.1 -->
 
 <!doctype html>
 <html lang="fr" class="scroll-smooth">
@@ -91,24 +91,58 @@
     <script
       src="https://kit.fontawesome.com/6478e7c909.js"
       crossorigin="anonymous"
+      defer
     ></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body class="mx-4 mb-12 min-h-screen bg-black text-white">
     <header
-      class="sticky top-0 z-50 mb-6 grid grid-cols-4 grid-rows-3 items-center bg-black p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:grid-rows-2 sm:p-6 sm:text-2xl lg:mb-36"
+      class="sticky top-0 z-50 mb-6 grid grid-cols-4 grid-rows-2 items-center bg-black p-2 font-extrabold sm:grid-cols-[70px_600px_1fr] sm:p-6 sm:text-2xl lg:mb-36"
     >
+      <!-- modale menu burger -->
+      <div
+        class="absolute inset-0 mx-auto my-0 mt-32 hidden h-fit w-80 rounded-xl border-[0.1px] border-gray-800 bg-white bg-opacity-95 p-5 text-left font-bold text-black"
+        id="modal"
+      >
+        <div class="absolute right-0 top-0 mr-2 mt-2 text-xl">
+          <i id="close-modal" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="gap-2 p-2">
+          <li>
+            <a href="#competence" class=""> Compétences </a>
+          </li>
+          <li>
+            <a href="#project" class=""> Projets </a>
+          </li>
+          <li>
+            <a href="#cv" class=""> Cv </a>
+          </li>
+          <li>
+            <a href="#contact" class=""> Contact </a>
+          </li>
+        </ul>
+      </div>
+
       <a class="lg:row-span-2" href="#welcome" aria-label="retour à l'accueil"
         ><i class="fa-solid fa-bug text-4xl"></i
       ></a>
 
-      <h1 class="col-span-3 flex flex-row lg:col-span-1">KEVIN STANDAERT</h1>
+      <h1 class="col-span-2 flex flex-row lg:col-span-1">KEVIN STANDAERT</h1>
 
-      <!-- <i class="fa-solid fa-bars"></i> -->
+      <!-- header mobile - menu burger -->
+      <div
+        id="burger"
+        class="col-start-4 row-start-1 justify-self-end lg:hidden"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
+      <!-- header fullscreen - menu -->
       <ul
-        class="col-span-4 row-start-3 flex gap-4 justify-self-end lg:col-start-3 lg:row-span-2 lg:flex lg:gap-6"
+        class="col-span-4 row-start-3 hidden gap-4 justify-self-end lg:col-start-3 lg:row-span-2 lg:flex lg:gap-6"
       >
         <li>
           <a
@@ -183,7 +217,7 @@
       </div>
       <div
         id="competence"
-        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-20 bg-gradient-to-t from-white via-slate-950 to-black p-6 shadow-md shadow-gray-600 lg:justify-between"
+        class="mb-8 flex min-h-full flex-col items-center gap-24 rounded-xl border-[0.1px] border-gray-800 bg-opacity-20 bg-gradient-to-t from-slate-300 via-slate-950 to-black p-6 shadow-md shadow-gray-600 lg:justify-between"
       >
         <h3 class="mt-10 text-2xl font-extrabold sm:mt-24 lg:text-6xl">
           COMPETENCES
@@ -209,151 +243,11 @@
           notamment PostgreSQL et MongoDB, et je suis capable de concevoir des
           schémas de base de données efficaces et performants.
         </p>
-        <div class="mb-8 flex flex-wrap justify-center gap-8 sm:px-32">
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/html_original_wordmark_logo_icon_146478.png"
-              class="h-full w-full mix-blend-luminosity"
-              alt="logo html"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_wordmark_logo_icon_146576.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo css"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo javascript"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo tailwind css"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo react"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2148/PNG/512/nextjs_icon_132160.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo next.js"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/512/PNG/512/prog-nodejs01_icon-icons.com_50781.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo node.js"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/express_original_wordmark_logo_icon_146528.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo express.js"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2104/PNG/512/api_icon_129131.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo api"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/628/PNG/512/sql-document_icon-icons.com_57634.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo sql"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo postgresql"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo mongodb"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://sqitch.org/img/sqitch-mark.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo sqitch"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo flutter"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/github_original_wordmark_logo_icon_146506.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo github"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/linux_original_logo_icon_146433.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo linux"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_scrum_icon_158716.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo agile scrum"
-            />
-          </div>
-          <div class="h-24 sm:h-32">
-            <img
-              loading="lazy"
-              src="https://cdn.icon-icons.com/icons2/2415/PNG/512/git_original_wordmark_logo_icon_146510.png"
-              class="h-full w-full object-cover mix-blend-luminosity"
-              alt="logo git"
-            />
-          </div>
+        <div
+          id="logo-container"
+          class="mb-8 flex flex-wrap justify-center gap-8 sm:px-32"
+        >
+          <!-- Generation des logos dans le scipt -->
         </div>
       </div>
       <!-- Projets -->
@@ -615,8 +509,5 @@
         © <span id="year"></span> Kevin Standaert - Tous droits réservés
       </p>
     </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
