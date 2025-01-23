@@ -60,6 +60,7 @@ logos.forEach((logoPath) => {
   img.src = logoPath;
   img.alt = "Logo";
   img.classList.add(
+    "img-logo",
     "h-full",
     "mix-blend-luminosity",
     "transition",
@@ -69,7 +70,7 @@ logos.forEach((logoPath) => {
   // Ajouter l'effet tactile
   div.addEventListener("touchstart", () => {
     // Réinitialiser tous les logos à l'état noir/blanc
-    document.querySelectorAll("img").forEach((otherLogo) => {
+    document.querySelectorAll(".img-logo").forEach((otherLogo) => {
       otherLogo.classList.add("mix-blend-luminosity");
     });
 
