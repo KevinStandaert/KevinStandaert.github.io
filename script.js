@@ -59,12 +59,22 @@ logos.forEach((logoPath) => {
   const img = document.createElement("img");
   img.src = logoPath;
   img.alt = "Logo";
-  img.classList.add("h-full", "mix-blend-luminosity", "object-contain");
+  img.classList.add(
+    "h-full",
+    "mix-blend-luminosity",
+    "transition",
+    "object-contain",
+  );
 
-  // Gérer les interactions "toucher" pour mobile
+  // Ajouter l'effet tactile
+  div.addEventListener("touchstart", () => {
+    // Réinitialiser tous les logos à l'état noir/blanc
+    document.querySelectorAll("img").forEach((otherLogo) => {
+      otherLogo.classList.add("mix-blend-luminosity");
+    });
 
-  img.addEventListener("touchstart", () => {
-    img.classList.toggle("mix-blend-luminosity");
+    // Activer la couleur uniquement sur le logo touché
+    img.classList.remove("mix-blend-luminosity");
   });
 
   div.appendChild(img);
