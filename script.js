@@ -48,12 +48,24 @@ const container = document.getElementById("logo-container");
 // Créer les divs pour chaque logo et les ajouter au conteneur
 logos.forEach((logoPath) => {
   const div = document.createElement("div");
-  div.classList.add("lg:h-24", "h-16", "max-w-16", "lg:max-w-28");
+  div.classList.add(
+    "lg:h-24",
+    "h-16",
+    "max-w-16",
+    "lg:max-w-28",
+    "hover:brightness-100",
+  );
 
   const img = document.createElement("img");
   img.src = logoPath;
   img.alt = "Logo";
   img.classList.add("h-full", "mix-blend-luminosity", "object-contain");
+
+  // Gérer les interactions "toucher" pour mobile
+
+  img.addEventListener("touchstart", () => {
+    img.classList.toggle("mix-blend-luminosity");
+  });
 
   div.appendChild(img);
   container.appendChild(div);
