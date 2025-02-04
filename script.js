@@ -81,3 +81,54 @@ logos.forEach((logoPath) => {
   div.appendChild(img);
   container.appendChild(div);
 });
+
+// Mode jour / nuit
+
+const body = document.getElementById("body");
+const moon = document.getElementById("moon");
+const sun = document.getElementById("sun");
+const header = document.getElementById("header");
+const contactButtons = document.querySelectorAll(".contact-button");
+const spanContactButtons = document.querySelectorAll(".contact-button span");
+
+moon.addEventListener("click", () => {
+  body.classList.remove("bg-darkblack-50");
+  body.classList.add("bg-darkwhite-50");
+  body.classList.remove("text-darkwhite-50");
+  body.classList.add("text-darckblack-50");
+  header.classList.remove("bg-darkblack-50");
+  header.classList.add("bg-darkwhite-50");
+  moon.classList.toggle("hidden");
+  sun.classList.toggle("hidden");
+  contactButtons.forEach((button) => {
+    button.classList.add("bg-darkwhite-50");
+    button.classList.remove("bg-darkblack-50");
+    button.classList.add("text-darkblack-50");
+    button.classList.remove("text-darkwhite-50");
+  });
+  spanContactButtons.forEach((span) => {
+    span.classList.remove("xl:text-darkblack-50");
+    span.classList.add("xl:text-darkwhite-50");
+  });
+});
+
+sun.addEventListener("click", () => {
+  body.classList.add("bg-darkblack-50");
+  body.classList.remove("bg-darkwhite-50");
+  body.classList.remove("text-darckblack-50");
+  body.classList.add("text-darkwhite-50");
+  header.classList.remove("bg-darkwhite-50");
+  header.classList.add("bg-darkblack-50");
+  moon.classList.toggle("hidden");
+  sun.classList.toggle("hidden");
+  contactButtons.forEach((button) => {
+    button.classList.remove("bg-darkwhite-50");
+    button.classList.add("bg-darkblack-50");
+    button.classList.remove("text-darkblack-50");
+    button.classList.add("text-darkwhite-50");
+  });
+  spanContactButtons.forEach((span) => {
+    span.classList.add("xl:text-darkblack-50");
+    span.classList.remove("xl:text-darkwhite-50");
+  });
+});
